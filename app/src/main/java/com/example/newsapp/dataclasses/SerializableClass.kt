@@ -1,7 +1,9 @@
 package com.example.newsapp.dataclasses
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 import java.io.Serializable
-
+@Parcelize
 data class SerializableClass (
 
     val id: Int,
@@ -17,4 +19,4 @@ data class SerializableClass (
     val launch_provider: String?,
     val event_id: Int?,
     val event_provider: String?
-): Serializable
+): Parcelable

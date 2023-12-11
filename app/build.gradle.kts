@@ -4,6 +4,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -63,6 +64,7 @@ android {
 
 dependencies {
 
+    implementation("androidx.compose.ui:ui-text-android:1.5.4")
     val room_version = "2.6.1"
 //    implementation("org.jetbrains:annotations:23.0.0")
 
@@ -96,4 +98,7 @@ dependencies {
     //Glide
     implementation("com.github.bumptech.glide:glide:4.11.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
+    
+    //Navigation
+    implementation("androidx.navigation:navigation-compose:2.4.0-alpha04")
 }
